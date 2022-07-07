@@ -1,6 +1,5 @@
 import { Component } from "react";
-import { PropTypes } from "prop-types";
-import {styleSheet} from '../../pages/dashboard/style'
+import {styleSheet} from '../../../pages/dashboard/style'
 import Typography from '@mui/material/Typography';
 import {Link} from 'react-router-dom'
 import { withStyles } from "@mui/styles";
@@ -21,7 +20,7 @@ class NavBar extends Component{
             e.target.style.transition="all 1s";
         }
     }
-    
+
     render() {
         const {classes}=this.props;
         return(
@@ -36,7 +35,7 @@ class NavBar extends Component{
                     className={classes.listOfNavBars}
                     >
                         <Link 
-                            to='/customer' 
+                            to='/' 
                             className={classes.navBtns}
                             onMouseOver={(e)=>{
                                 let checkMouseAway = true
@@ -51,7 +50,7 @@ class NavBar extends Component{
                         </Link>
                         
                         <Link 
-                            to='/' 
+                            to='/customer' 
                             className={classes.navBtns}
                             onMouseOver={(e)=>{
                                 let checkMouseAway = true
@@ -65,7 +64,7 @@ class NavBar extends Component{
                             <li className={classes.listInNav}>Customer</li>    
                         </Link>
                         <Link 
-                            to='/' 
+                            to='/item' 
                             className={classes.navBtns}
                             onMouseOver={(e)=>{
                                 let checkMouseAway = true

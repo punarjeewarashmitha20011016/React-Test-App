@@ -7,7 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import NavBar from "../../components/navBar/index";
+import NavBar from "../../components/common/navBar/index";
 
 class DashboardPage extends Component{
     constructor(props){

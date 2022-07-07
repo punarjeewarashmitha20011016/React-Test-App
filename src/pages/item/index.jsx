@@ -5,11 +5,10 @@ import NavBar from "../../components/common/navBar/index"
 import CommonBtn from "../../components/common/button";
 import { TextField } from "@mui/material";
 
-class CustomerPage extends Component{
+class ItemPage extends Component{
     constructor(props){
         super(props);
     }
-
     render(){
         const {classes} = this.props;
         return(
@@ -21,35 +20,35 @@ class CustomerPage extends Component{
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="Id"
+                                label="Code"
                                 defaultValue=""
                                 className={classes.txtFieldFirstThree}
                             />
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="Name"
+                                label="Description"
                                 defaultValue=""
                                 className={classes.txtFieldFirstThree}
                             />
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="Contact No"
+                                label="Qty"
                                 defaultValue=""
                                 className={classes.txtFieldFirstThree}
                             />
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="NIC"
+                                label="Buying Price"
                                 defaultValue=""
                                 className={classes.txtFieldLastTwo}
                             />
                             <TextField
                                 required
                                 id="outlined-required"
-                                label="Address"
+                                label="Unit Price"
                                 defaultValue=""
                                 className={classes.txtFieldLastTwo}
                             />
@@ -79,4 +78,4 @@ class CustomerPage extends Component{
         )
     }
 }
-export default withStyles(styleSheet)(CustomerPage)
+export default withStyles(styleSheet)(ItemPage)
