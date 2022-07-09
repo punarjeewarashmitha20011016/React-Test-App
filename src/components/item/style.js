@@ -1,33 +1,27 @@
 export const styleSheet={
-    container:{
-        display:'flex',
-        width:"100vw",
-        height:"100vh",
-        backgroundColor:"#E1DEDD",
-        flexDirection:"column"
-    },
     bodyContainer:{
+        position:'absolute',
         display:'flex',
         flexDirection:"column",
         width:"100%",
-        height:"92%",
+        height:"100%",
     },
     formContainer:{
         display:'flex',
         flexDirection:"column",
         width:"100%",
-        height:"60%",
+        height:"30%",
         alignItems:"center",
-        justifyContent:"center"
+        justifyContent:"center",
     },
     txtFieldContainer:{
         display:'flex',
         flexDirection:"row",
         flexWrap:'wrap',
         width:"90%",
-        height:"80%",
+        height:"100%",
         alignItems:"center",
-        justifyContent:'center'
+        justifyContent:'center',
     },
     txtFieldFirstThree:{
         width:"calc(100%/4*1)",
@@ -47,21 +41,39 @@ export const styleSheet={
         display:'flex',
         flexDirection:"column",
         width:"100%",
-        height:"40%",
-        alignItems:"center"
+        height:"15%",
+        alignItems:"center",
     },
     childContainerInBtn:{
         display:"flex",
         flexDirection:"row",
-        width:"60%",
-        height:"20%",
+        width:"70%",
+        height:"100%",
         alignItems:"center",
         justifyContent:"center",
     },
     btns:{
+        display:"flex",
         width:"20%",
         marginLeft:"2%!important",
         marginRight:"2%!important",
+        alignItems:"center",
+        justifyContent:"center",
+    },
+    tableContainer:{
+        display:"flex",
+        flexDirection:"column",
+        heigth:'55%',
+        width:"100%",
+        alignItems:"center",
+        justifyContent:"center",
+    },
+    tableChildContainer:{
+        display:"flex",
+        flexDirection:"column",
+        width:"80%",
+        alignItems:"center",
+        justifyContent:"center",
     }
 
 }

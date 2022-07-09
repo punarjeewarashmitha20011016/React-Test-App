@@ -3,6 +3,11 @@ import PropTypes from "prop-types";
 import Button from '@mui/material/Button';
 
 class CommonBtn extends Component{
+
+    constructor(props){
+        super(props);
+    }
+
     static propTypes = {
         onClick: PropTypes.func,
         children: PropTypes.node,

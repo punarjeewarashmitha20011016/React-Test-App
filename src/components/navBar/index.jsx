@@ -1,5 +1,5 @@
 import { Component } from "react";
-import {styleSheet} from '../../../pages/dashboard/style'
+import {styleSheet} from '../navBar/style'
 import Typography from '@mui/material/Typography';
 import {Link} from 'react-router-dom'
 import { withStyles } from "@mui/styles";
@@ -45,7 +45,8 @@ class NavBar extends Component{
                                 let checkMouseAway = false
                                 this.changeBackground(e,checkMouseAway)
                             }}
-                            style={{ textDecoration: 'none' }}>
+                            style={{ textDecoration: 'none' }}
+                            >
                             <li className={classes.listInNav}>Dasboard</li>
                         </Link>
                         
@@ -60,7 +61,8 @@ class NavBar extends Component{
                                 let checkMouseAway = false
                                 this.changeBackground(e,checkMouseAway)
                             }}
-                            style={{ textDecoration: 'none' }}>
+                            style={{ textDecoration: 'none' }}
+                            >
                             <li className={classes.listInNav}>Customer</li>    
                         </Link>
                         <Link 
@@ -74,7 +76,8 @@ class NavBar extends Component{
                                 let checkMouseAway = false
                                 this.changeBackground(e,checkMouseAway)
                             }}
-                            style={{ textDecoration: 'none' }}>
+                            style={{ textDecoration: 'none' }}
+                            >
                             <li className={classes.listInNav}>Item</li>
                         </Link>
                         

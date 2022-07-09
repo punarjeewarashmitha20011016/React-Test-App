@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import PropTypes from "prop-types";
-import {styleSheet} from "../../../pages/dashboard/style";
+import {styleSheet} from "./cards";
 import { withStyles} from "@mui/styles";
 class CardsInDashBoard extends Component{
     constructor(props){
@@ -30,7 +30,7 @@ class CardsInDashBoard extends Component{
     }
 
     render(){
-        const {maxWidth,classes,className,sx,image,varient,component,color,height,alt} = this.props
+        const {classes,image,setTitle} = this.props
         return(
             <Card 
                 className={classes.cards}
@@ -43,11 +43,7 @@ class CardsInDashBoard extends Component{
                         />
                         <CardContent>
                             <Typography gutterBottom variant='h5' component='div'>
-                                Maliban Chocalate Biscuit
-                            </Typography>
-                            <Typography variant='body2' color='text.secondary'>
-                                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                                    species, ranging across all continents except Antarctica
+                                {setTitle}
                             </Typography>
                         </CardContent>
                 </CardActionArea>
